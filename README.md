@@ -1,0 +1,2 @@
+# Restaurant-menu-ordering-app
+The Restaurant Menu Ordering App is a modern web-based solution that replaces traditional paper menus and manual ordering. Customers can browse menus, place orders, and make payments online, while the kitchen receives real-time updates. This system enhances operational efficiency, reduces wait times, and minimizes order errors
