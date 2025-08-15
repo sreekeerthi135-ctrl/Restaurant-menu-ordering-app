@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - ByteBites</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Add Menu Item</h2>
+      <div class="form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="price" placeholder="Price">
+        <input type="text" id="category" placeholder="Category">
+        <input type="text" id="imageUrl" placeholder="Image URL (optional)">
+        <button class="btn" id="add-item">Add Item</button>
+      </div>
+    </section>
+    <section>
+      <h2>Current Menu</h2>
+      <div id="admin-menu" class="grid"></div>
+    </section>
+  </main>
+  <script type="module" src="scripts/api.js"></script>
+  <script type="module" src="scripts/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - ByteBites</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Menu</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+  <main>
+    <div class="filters">
+      <label>Category:
+        <select id="category-filter">
+          <option value="">All</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Burgers">Burgers</option>
+          <option value="Starters">Starters</option>
+          <option value="Sides">Sides</option>
+          <option value="Beverages">Beverages</option>
+        </select>
+      </label>
+    </div>
+    <div id="menu-list" class="grid"></div>
+  </main>
+  <script type="module" src="scripts/api.js"></script>
+  <script type="module" src="scripts/menu.js"></script>
+</body>
+</html>

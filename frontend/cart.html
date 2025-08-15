@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - ByteBites</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <a href="menu.html">Back to Menu</a>
+    </nav>
+  </header>
+  <main>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <p>Total: ₹<span id="total-amount">0</span></p>
+      <label>Name: <input type="text" id="customer-name" placeholder="Your name"></label>
+      <label>Table (optional): <input type="text" id="table-number" placeholder="e.g., T3"></label>
+      <button class="btn" id="place-order">Place Order</button>
+    </div>
+    <div id="order-result"></div>
+  </main>
+  <script type="module" src="scripts/api.js"></script>
+  <script type="module" src="scripts/cart.js"></script>
+</body>
+</html>
