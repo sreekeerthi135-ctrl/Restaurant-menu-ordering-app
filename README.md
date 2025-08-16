@@ -1,22 +1,22 @@
-# 🍔 Restaurant Menu Ordering App
+#  Restaurant Menu Ordering App
 
 A GitHub-ready, full-stack web app where customers can browse a digital menu, add to cart, place orders, and track status. 
 Kitchen staff and admins can see orders and manage the menu in real-time.
 
-## ✨ Features
+##  Features
 - Customer: Menu browsing, cart, order placement, order tracking.
 - Admin: Add menu items, see current menu.
 - Real-time: Socket hooks present; polling used by default for simplicity.
 - Tech: Node.js, Express, MongoDB, HTML/CSS/Vanilla JS.
 
-## 🧱 Project Structure
+##  Project Structure
 ```
 restaurant-menu-ordering-app/
 ├── backend/          # Express server + MongoDB models & routes
 └── frontend/         # HTML/CSS/JS client
 ```
 
-## 🔧 Setup (Local)
+##  Setup (Local)
 1) **Backend**
 ```bash
 cd backend
@@ -35,26 +35,22 @@ Backend runs at `http://localhost:5000`.
     localStorage.setItem('api_base','http://localhost:5000');
     ```
 
-## 🧪 API Endpoints
+##  API Endpoints
 - `GET /api/menu` — list menu items (optional `?category=Pizza` etc)
 - `POST /api/menu` — add a menu item (no auth in demo; add in production)
 - `POST /api/orders` — create new order
 - `GET /api/orders/:id` — get order by id
 - `PUT /api/orders/:id/status` — update order status (kitchen/admin)
 
-## 📸 Screenshots (suggested)
-- `frontend/menu.html` showing cards grid
-- `frontend/cart.html` showing items + total
-- `frontend/order.html?id=<id>` showing order status
 
-## 🚀 Deploy
+##  Deploy
 - **Backend**: Render/Railway/Heroku.
 - **Frontend**: Netlify/Vercel/GitHub Pages (adjust `api_base` to your backend URL).
 
-## 🛡️ Notes
+##  Notes
 - This demo has no authentication; add JWT & roles for production (Admin, Kitchen, Customer).
 - Payments are not integrated; plug in Razorpay/Stripe at checkout.
 - Socket.io client can be added for instant status updates.
 
-## 📝 License
+##  License
 MIT
